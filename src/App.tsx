@@ -49,6 +49,7 @@ const App: React.FC = () => {
                         <img src="./" alt="" />
                     </div>
                     <Routes>
+                        <Route path="/" element={<Home/>} />
                         <Route path="/home" element={<Home />} />
                         <Route path="/about" element={<AboutMe />} />
                         <Route path="/projects" element={<Projects />} />
