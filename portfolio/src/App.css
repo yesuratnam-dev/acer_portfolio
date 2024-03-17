@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    /* background-color: black; */
+}
+
+body{
+    background-color: black;
+    color: #ffffff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:transparent;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:  100;
+}
+
+.logo {
+    cursor: default;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0ef;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: dotted;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .2s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s  * var(--i));
+}
+
+
+.navbar a:hover,
+.navbar a.active{
+    color: #0ef;
+
+}
+
+.home{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 70px 10% 0;
+}
+
+.home-image img{
+    max-width: 500px;
+    margin-right: -20px;
+    opacity: 0;
+    /* animation: zoomIn 1s ease forwards; */
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .2s;
+    /* border-radius: 50%; */
+    
+    /* box-shadow: 0 0 50px rgb(131, 19, 2); */
+   
+
+}
+
+
+.home-content {
+    max-width: 600px;
+}
+
+
+.home-content h1{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: .2s;
+    /* color: rgb(6, 202, 232); */
+    /* color: white; */
+    color: #0ef;
+}
+
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home-content h3 span{
+    color: #0ef;
+}
+
+.home-content p{
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .3s;
+}
+
+/* .home-content h3 :nth-child(2){
+    margin: 50px;
+} */
+
+
+.social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    transition: .3s ease;
+    box-shadow: 0 0 20px #0ef;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s  * var(--i));
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
+}
+
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

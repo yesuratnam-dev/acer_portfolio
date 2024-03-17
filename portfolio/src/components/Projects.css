@@ -1,0 +1,18 @@
+/* src/components/Projects.css */
+.Project_Names {
+    /* Your desired styles for the list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    /* Add more styles as needed */
+  }
+
+  .h2{
+    color: rgb(11, 233, 37);
+  }
+
+  .projects{
+    color: black;
+  }
