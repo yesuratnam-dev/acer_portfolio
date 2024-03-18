@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <header>
           <div className='home-content'>
-          <h1 style={{"color":"#0ef"}}>Build is in progres....</h1>
+          <h1 style={{"color":"#0ef"}}>Build in progress....</h1>
           </div>
           
         </header>

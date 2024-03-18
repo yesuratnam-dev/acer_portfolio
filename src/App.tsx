@@ -46,7 +46,7 @@ const App: React.FC = () => {
                     </div>
 
                     <div className="home-image">
-                        <img src="./" alt="" />
+                        <img src="" alt="" />
                     </div>
                     <Routes>
                         <Route path="/" element={<Home/>} />
