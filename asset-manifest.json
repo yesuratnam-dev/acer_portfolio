@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/acer_portfolio/static/css/main.e94830d4.css",
-    "main.js": "/acer_portfolio/static/js/main.c81c91ed.js",
+    "main.js": "/acer_portfolio/static/js/main.5b391c12.js",
     "static/js/453.1407b060.chunk.js": "/acer_portfolio/static/js/453.1407b060.chunk.js",
     "index.html": "/acer_portfolio/index.html",
     "main.e94830d4.css.map": "/acer_portfolio/static/css/main.e94830d4.css.map",
-    "main.c81c91ed.js.map": "/acer_portfolio/static/js/main.c81c91ed.js.map",
+    "main.5b391c12.js.map": "/acer_portfolio/static/js/main.5b391c12.js.map",
     "453.1407b060.chunk.js.map": "/acer_portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e94830d4.css",
-    "static/js/main.c81c91ed.js"
+    "static/js/main.5b391c12.js"
   ]
 }
